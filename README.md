@@ -32,14 +32,8 @@ Jammming is a web application that allows users to search the Spotify library, c
 
 ## Future Enhancements
 
-- Integration with other music streaming platforms.
-- Ability to reorder songs within the custom playlist.
 - Preview of song snippets directly within the app.
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
