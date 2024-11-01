@@ -1,0 +1,45 @@
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../public/images/header.png') no-repeat center center fixed; 
+    background-size: cover;
+    transition: height 0.5s ease;
+}
+  
+.header h1 {
+    color: #333333;
+    filter: drop-shadow(rgb(30, 215, 96) 3px 3px 1px);
+    font-size: 3em;
+    font-weight: 800;
+    margin: 10px auto;
+}
+  
+.header span {
+    font-size: 1.1em;
+    color: #444444; 
+    font-weight: 600;
+    background-color: #f7f2f269;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+  
+.shrunk-header {
+    height: 270px;
+    justify-content: flex-start;
+    padding-top: 20px; 
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App-logo {
+    max-width: 64px;
+    max-height: 64px;
+}

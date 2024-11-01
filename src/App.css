@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  color: rgb(30, 215, 96);
+  filter: drop-shadow(rgb(12, 86, 38) 2px 2px 0px);
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.descriptiveText {
+  margin: auto;
+  background-color: rgba(30, 215, 95, 0.212);
+}

@@ -1,0 +1,136 @@
+.trackBox {
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;  
+    max-width: 100%;  
+    border-radius: 8px;
+    padding: 16px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.trackBox:hover {
+    box-shadow: 8px 8px 8px black;
+    border: rgba(128, 128, 128, 0.314) 1px solid;
+}
+
+.trackBox:hover .addButton {
+    opacity: 1;
+}
+
+.albumCover {
+    flex: 0 0 auto;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+}
+
+.trackDetails {
+    flex: 1;  
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.trackDetails h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.addButton, .removeButton {
+    flex: 0 0 auto;
+    border-radius: 500px;
+    inline-size: 48px;
+    block-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s, opacity 0.3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1ed760;
+    position: absolute;
+}
+
+.addButton img, .removeButton img {
+    width: 2em;
+    height: 2em;
+}
+
+.addButton:hover, .removeButton:hover {
+    background-color: #1fdf64;
+    transform: scale(1.1);
+}
+
+.addButton:active, .removeButton:active {
+    transform: scale(1);
+    background-color: #169c46;
+}
+
+.addButton {
+    opacity: 0;
+    bottom: 15px;
+    right: 15px;
+}
+
+.removeButton {
+    bottom: -25px;
+    right: 0px;
+}
+
+.imageBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .trackBox {
+        justify-content: space-between;
+        flex-direction: row;
+        border-radius: 0;
+        border: none;
+        min-height: 60px;
+        padding: 8px;
+    }
+
+    .trackBox:hover {
+        background-color: rgba(128, 128, 128, 0.314);
+        border: none;
+    }
+
+    .trackDetails {
+        position: absolute;
+        left: 80px;
+    }
+
+    .albumCover {
+        position: absolute;
+        left: 0;
+        width: 50px;
+    }
+
+    .imageBox {
+        align-items: center;
+    }
+
+    .trackDetails h3 {
+        margin: 0;
+    }
+
+    .addButton {
+        opacity: 1;
+        right: 0px;
+        bottom: -25px;
+    }
+
+    .trackDetails span:nth-child(4) {
+        display: block;
+    }
+
+    .trackDetails span:nth-child(3) {
+        visibility: hidden;
+    }
+}

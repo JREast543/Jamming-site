@@ -1,0 +1,58 @@
+.searchResultsContainer .tracklistContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+    .searchResultsContainer .tracklistContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+.playlistContainer .tracklistContainer {
+    padding: 8px;
+}
+
+/* Track in Playlist */
+.playlistContainer .tracklistContainer .playlistTrack {
+    justify-content: space-between;
+    display: flex;  
+    flex-direction: row;
+    border: none;
+    min-height: 60px;
+    padding: 8px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.playlistContainer .tracklistContainer .playlistTrack:hover {
+    background-color: rgba(128, 128, 128, 0.314);
+    border: none
+}
+
+.playlistContainer .tracklistContainer .playlistTrack .albumCover {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: auto;
+}
+
+.playlistContainer .tracklistContainer .playlistTrack .trackDetails {
+    position: absolute;
+    left: 80px;
+}
+
+.playlistContainer .tracklistContainer .playlistTrack .trackDetails h3 {
+    margin: 0
+}
+
+.playlistContainer .tracklistContainer .playlistTrack .trackDetails span:nth-child(4) {
+    display: block;
+}
+
+.playlistContainer .tracklistContainer .playlistTrack .trackDetails span:nth-child(3) {
+    visibility: hidden;
+}
